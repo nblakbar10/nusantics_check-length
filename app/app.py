@@ -33,7 +33,7 @@ def upload():
     
 
 
-@app.route("/result", methods = ['GET', 'POST'])
+@app.route("/result")
 def check_length():
     if request.method == 'POST':
         if 'file' not in request.files:
