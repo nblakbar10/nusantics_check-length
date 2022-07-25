@@ -34,7 +34,7 @@ def upload():
 
 
 @app.route("/result")
-def check_length():
+def result():
     if request.method == 'POST':
         if 'file' not in request.files:
             print('No file part')
