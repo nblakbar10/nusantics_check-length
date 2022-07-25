@@ -55,12 +55,14 @@ def check_length():
                         line=line.rstrip()
                         seq_length= len(line)
                         print(line, seq_length)
-                        return line, seq_length
+                        # return line, seq_length
+                        return render_template("upload_index.html", value=(line, seq_length))
                         # return {'line': line, 'length': seq_length}
                         # return render_templatecheck_length()
                         # # return result
-                    else: # stop the program count equals to other numbers
-                        break
+
+                    # else: # stop the program count equals to other numbers
+                    #     break
 
 
                 # for s in SeqIO.parse(StringIO(file.read()), 'fastq'):
