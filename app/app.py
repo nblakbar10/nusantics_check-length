@@ -1,8 +1,9 @@
 # from django.shortcuts import redirect, render
 from urllib import response
+# from django.shortcuts import redirect
 # from cv2 import line
-from django.shortcuts import redirect
-from flask import Flask, jsonify, render_template, send_file, url_for, request
+# from django.shortcuts import redirect
+from flask import Flask, jsonify, redirect, render_template, send_file, url_for, request
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 import os
