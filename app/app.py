@@ -22,14 +22,14 @@ app = Flask(__name__)
 @app.route('/')
 @app.route("/index")
 def index():
-    return redirect("index.html")
+    return render_template("index.html")
 
 
 
 
 @app.route("/upload")
 def upload():
-    return redirect("upload_index.html")
+    return render_template("upload_index.html")
     
 
 
