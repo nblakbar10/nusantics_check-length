@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Upload</title>
+</head>
+
+<style>
+.custom-file-upload {
+    background-color: #008CBA;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    cursor: pointer;
+}
+</style>
+
+<body>
+  <p id="demo">Please Select File</p>
+</body>
+
+<form action="http://localhost:5000/check_length" method="post" enctype = "multipart/form-data">
+    <label for="file-upload" class="custom-file-upload">
+        <i class="fa fa-cloud-upload"></i> Upload file
+    </label>
+    <input type="file" id="file-upload" name='file' style="display:none;">
+    <label id="file-name"></label>
+    <input type="submit" name="submit" value="Submit" class="custom-file-upload">
+</form>
+
+
+<script>
+    document.querySelector("#file-upload").onchange = function(){
+    document.querySelector("#file-name").textContent = this.files[0].name;
+    }
+</script>
+
+</html>
