@@ -33,7 +33,7 @@ def upload():
     
 
 
-@app.route("/check_length", methods = ['GET', 'POST'])
+@app.route("/result", methods = ['GET', 'POST'])
 def check_length():
     if request.method == 'POST':
         if 'file' not in request.files:
@@ -57,7 +57,7 @@ def check_length():
                         # print(line, seq_length)
                         result = line, seq_length
                         # return line, seq_length
-                        return render_template("upload_index.html", data=result)
+                        return render_template("result.html", data=result)
                         # return {'line': line, 'length': seq_length}
                         # return render_templatecheck_length()
                         # # return result
