@@ -19,7 +19,7 @@ def index():
 def upload():
     return render_template("upload_index.html")
     
-@app.route("/result")
+@app.route("/result", methods = ['POST'])
 def result():
     if request.method == 'POST':
         if 'file' not in request.files:

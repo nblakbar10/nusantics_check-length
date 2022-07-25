@@ -33,7 +33,7 @@ def upload():
     
 
 
-@app.route("/result")
+@app.route("/result", methods = ['POST'])
 def result():
     if request.method == 'POST':
         if 'file' not in request.files:
