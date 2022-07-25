@@ -1,6 +1,6 @@
 # from django.shortcuts import redirect, render
 from urllib import response
-from cv2 import line
+# from cv2 import line
 from django.shortcuts import redirect
 from flask import Flask, jsonify, render_template, send_file, url_for, request
 from werkzeug.utils import secure_filename
