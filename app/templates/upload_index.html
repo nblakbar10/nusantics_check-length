@@ -24,7 +24,7 @@
 
 <body>
   <p id="demo">Please Select File</p>
-</body>
+
 
 <form action="http://localhost:5000/check_length" method="post" enctype = "multipart/form-data">
     <label for="file-upload" class="custom-file-upload">
@@ -35,6 +35,9 @@
     <input type="submit" name="submit" value="Submit" class="custom-file-upload">
 </form>
 
+{{data}}
+
+</body>
 
 <script>
     document.querySelector("#file-upload").onchange = function(){

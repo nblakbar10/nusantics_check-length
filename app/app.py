@@ -54,9 +54,10 @@ def check_length():
                     if count==2: #2nd line is the sequence , so check length
                         line=line.rstrip()
                         seq_length= len(line)
-                        print(line, seq_length)
+                        # print(line, seq_length)
+                        result = line, seq_length
                         # return line, seq_length
-                        return render_template("upload_index.html", value=(line, seq_length))
+                        return render_template("upload_index.html", data=result)
                         # return {'line': line, 'length': seq_length}
                         # return render_templatecheck_length()
                         # # return result
